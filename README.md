@@ -2,7 +2,6 @@
 
 ### Présentation
 
-Ce projet contient l'ensemble des ressources du projet annuel avec Mr Vidal. 
 
 **Thématique de l'application : Application permettant de différencier les drapeaux (photos) issus de différents pays**
 
@@ -15,7 +14,6 @@ Membres de l'équipe:
 
 ### Compte-rendu
 
-Lien vers le rapport (Google Doc) : [Rapport Projet Annuel](https://docs.google.com/document/d/1lM383HdgLVEmQjvW0Nz036tlL89UG1IHnfgbQYwYco0/edit?usp=sharing)
 
 <br>
 
