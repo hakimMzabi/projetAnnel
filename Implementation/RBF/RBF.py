@@ -1,6 +1,4 @@
-#
-# [30/06/2019] Created by Théo Huchard
-#
+
 
 import os
 import sys

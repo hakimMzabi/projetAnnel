@@ -1,7 +1,3 @@
-//
-// Created by Baptiste Vasseur on 2019-05-01.
-//
-
 #if _WIN32
     #define SUPEREXPORT __declspec(dllexport)
 #else

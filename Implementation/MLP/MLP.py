@@ -1,6 +1,3 @@
-#
-# Created by Baptiste Vasseur on 2019-05-27.
-#
 import json
 import os
 import sys

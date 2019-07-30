@@ -1,6 +1,3 @@
-#
-# Created by Baptiste Vasseur on 2019-05-18.
-#
 import os
 import sys
 from ctypes import *
