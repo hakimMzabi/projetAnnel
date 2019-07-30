@@ -1,0 +1,163 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+.upload {
+  cursor: pointer;
+  position: relative;
+}
+
+.upload .image {
+	color: #B4B8C1;
+	stroke: none;
+	transform: rotate(15deg);
+}
+
+.upload .circle {
+	display: block;
+	stroke: #EDEEF1;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 4;
+	width: 164px;
+	height: 164px;
+	opacity: 0;
+	transition: all .2s ease;
+	transform: rotate(-90deg);
+}
+
+.upload .circle .active {
+	stroke: #67C38A;
+	stroke-dasharray: 502.65;
+	stroke-dashoffset: 502.65;
+	transition: all 4s ease;
+}
+
+.upload:before {
+	content: '';
+	border-radius: 12px;
+	background: rgba(180, 184, 193, 0.3);
+	transform: rotate(-15deg);
+}
+
+.upload .image, .upload:before {
+	display: block;
+	width: 52px;
+	height: 52px;
+	margin: -26px 0 0 -26px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform-origin: 0% 100%;
+	transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.upload:not(.do):hover .image {
+	transform: rotate(10deg);
+	color: #67C38A;
+}
+
+.upload:not(.do):hover:before {
+	transform: rotate(-10deg);
+	background: rgba(103, 195, 138, 0.3);
+}
+
+.upload.do .image {
+	color: #67C38A;
+	transform: rotate(10deg);
+	animation: bounce 1s infinite ease;
+}
+
+.upload.do:before {
+	background: rgba(103, 195, 138, 0.3);
+	transform: rotate(-10deg);
+	animation: bounceAlt 1s infinite ease;
+}
+
+.upload.do .circle {
+	opacity: 1;
+}
+
+.upload.do .circle .active {
+	stroke-dashoffset: 0;
+}
+
+.upload.animateEnd .image, .upload.animateEnd:before {
+	animation: none;
+}
+
+.upload.animateEnd .image {
+	transform: rotate(10deg);
+}
+
+.upload.animateEnd:before {
+	transform: rotate(-10deg);
+}
+
+.upload.animateEnd .circle {
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+.upload.animateEnd .circle .active {
+	stroke-dasharray: 502.65;
+	stroke-dashoffset: 502.65;
+}
+
+@keyframes bounce {
+  50% {
+	transform: rotate(15deg);
+  }
+}
+
+@keyframes bounceAlt {
+  50% {
+	transform: rotate(-15deg);
+  }
+}
+
+body {
+	min-height: 100vh;
+	font-family: Lato, Arial, sans-serif;
+	color: #ADAFB6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	    flex-wrap: wrap;
+    align-content: center;
+}
+
+body .dribbble {
+	position: fixed;
+	display: block;
+	right: 20px;
+	bottom: 20px;
+	opacity: .5;
+	transition: all .4s ease;
+}
+
+body .dribbble:hover {
+	opacity: 1;
+}
+
+body .dribbble img {
+	display: block;
+	height: 36px;
+}
+
+#loadingText{
+	display: none;
+    width: 100%;
+    text-align: center;
+	margin-top: 50px;
+}
+
+#img-preview{
+	display: none;
+}
